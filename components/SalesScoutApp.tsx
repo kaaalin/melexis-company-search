@@ -335,7 +335,7 @@ async function runTests(): Promise<{name:string; pass:boolean; note?:string}[]> 
 
     return results;
   } catch (e:any) {
-    results.push({ name: "unexpected error in tests", pass: False, note: String(e) });
+    results.push({ name: "unexpected error in tests", pass: false, note: String(e) });
     return results;
   }
 }
